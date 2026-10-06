@@ -31,10 +31,3 @@ A modern project planning and timeline collaboration SaaS application built with
 
 - Node.js (v18 or higher recommended)
 - npm, yarn, or pnpm
-
-### Installation
-
-1. **Clone the repository:**
-   ```bash
-   git clone [https://github.com/your-username/planpulse.git](https://github.com/your-username/planpulse.git)
-   cd planpulse
