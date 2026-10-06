@@ -1,0 +1,190 @@
+// ========================================
+// Bootstrap Theme
+// ========================================
+
+// Main colors
+$primary: #7c3aed;
+$secondary: #6366f1;
+$success: #10b981;
+$warning: #f59e0b;
+$danger: #ef4444;
+$info: #06b6d4;
+
+// Body
+$body-bg: #f8f7fc;
+$body-color: #201c38;
+
+// Typography
+$font-family-sans-serif:
+    Inter,
+    system-ui,
+    -apple-system,
+    "Segoe UI",
+    sans-serif;
+
+// Borders
+$border-radius: 0.75rem;
+$border-radius-sm: 0.5rem;
+$border-radius-lg: 1.25rem;
+
+// Cards
+$card-border-width: 0;
+$card-border-radius: 1.25rem;
+
+// Buttons
+$btn-border-radius: 0.75rem;
+$btn-font-weight: 600;
+
+// Forms
+$input-border-radius: 0.75rem;
+$input-border-color: #e5e1ef;
+$input-bg: #ffffff;
+
+// Navbar
+$navbar-padding-y: 1rem;
+
+// ========================================
+// Import Bootstrap
+// ========================================
+
+@import "bootstrap/scss/bootstrap";
+
+[data-bs-theme="light"] {
+    --bs-body-bg: #f8f7fc;
+    --bs-body-color: #201c38;
+
+    --bs-card-bg: #ffffff;
+
+    --bs-border-color: #e5e1ef;
+
+    --bs-primary: #7c3aed;
+    --bs-primary-rgb: 124, 58, 237;
+
+    --bs-secondary: #6366f1;
+    --bs-secondary-rgb: 99, 102, 241;
+
+    --bs-warning: #f59e0b;
+    --bs-warning-rgb: 245, 158, 11;
+
+    --bs-form-control-bg: #ffffff;
+    --bs-form-control-color: #201c38;
+    --bs-form-control-border-color: #d2d2d2;
+    --bs-form-control-focused-border-color: #e5e1ef;
+
+    --app-switch-bg: #f8f7fc;
+    --app-switch-border: #f59e0b;
+    --app-switch-thumb: #f59e0b;
+
+    --bs-btn-color: #201c38;
+
+    // --bs-modal-bg: #f8f7fc;
+}
+
+[data-bs-theme="dark"] {
+    --bs-body-bg: #11101a;
+    --bs-body-color: #f8fafc;
+
+    --bs-card-bg: #302d3f;
+
+    --bs-border-color: #383548;
+
+    --bs-primary: #7c3aed;
+    --bs-primary-rgb: 167, 139, 250;
+
+    --bs-secondary: #6366f1;
+    --bs-secondary-rgb: 129, 140, 248;
+
+    --bs-warning: #fbbf24;
+    --bs-warning-subtle: 
+    --bs-warning-rgb: 251, 191, 36;
+
+    --bs-form-control-bg: #1b1927;
+    --bs-form-control-color: #f8fafc;
+    --bs-form-control-border-color: #383548;
+    --bs-form-control-focused-border-color: #935f07;
+
+    --app-switch-bg: #383548;
+    --app-switch-border: #935f07;
+    --app-switch-thumb: #fbbf24;
+
+    --bs-btn-color: #f8fafc;
+    // --bs-modal-bg: #383548;
+
+}
+
+.form-control {
+    background-color: var(--bs-form-control-bg);
+    color: var(--bs-form-control-color);
+    border-color: var(--bs-form-control-border-color);
+}
+
+.form-control:focus {
+    background-color: var(--bs-form-control-bg);
+    color: var(--bs-form-control-color);
+    border-color: var(--bs-form-control-focused-border-color);
+    box-shadow: 0 0 0 0.25rem var(--bs-warning-bg-subtle);
+}
+
+.form-check-input {
+    background-color: var(--bs-form-check-input-bg);
+}
+
+.theme-switch .form-check-input {
+    cursor: pointer;
+
+    background-color: var(--app-switch-bg);
+    border-color: var(--app-switch-border);
+
+    background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'><circle r='3' fill='%23f59e0b'/></svg>");
+}
+
+.theme-switch .form-check-input:checked {
+    background-color: var(--app-switch-bg);
+    border-color: var(--app-switch-border);
+
+    background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'><circle r='3' fill='%23fbbf24'/></svg>");
+}
+
+.form-check-input:focus {
+    box-shadow: 0 0 0 0.25rem var(--bs-warning-bg-subtle);
+    border-color: var(--bs-form-control-focused-border-color);
+}
+
+.form-check-input:checked {
+    background-color: var(--bs-form-check-input-bg);
+    border-color: var(--bs-form-check-input-bg);
+}
+
+.theme-switch {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    margin-left: 1rem;
+}
+
+.theme-icon {
+    font-size: 1rem;
+    line-height: 1;
+    cursor: pointer;
+}
+
+.theme-switch .form-check {
+    margin: 0;
+}
+
+.theme-switch .form-check-input {
+    cursor: pointer;
+}
+
+.navbar-nav .nav-link.active {
+    color: var(--bs-primary);
+}
+
+.form-check-input:checked {
+    background-color: var(--bs-primary);
+    border-color: var(--bs-primary);
+}
+
+#share-btn:hover{
+    color: var(--bs-body-bg);
+}

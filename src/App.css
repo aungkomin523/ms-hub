@@ -1,0 +1,35 @@
+/* Custom toggle (hamburger) */
+.nav-toggle {
+  border: none !important;
+  box-shadow: none !important;
+  padding: 8px !important;
+  display: inline-flex;
+  flex-direction: column;
+  gap: 5px;
+  background: transparent !important;
+}
+
+.nav-toggle:focus {
+  box-shadow: none !important;
+}
+
+.toggle-bar {
+  display: block;
+  width: 22px;
+  height: 2px;
+  border-radius: 2px;
+  background: #cbd5e1;
+  transition: transform 0.25s ease, opacity 0.25s ease;
+}
+
+.nav-toggle[aria-expanded='true'] .toggle-bar:nth-child(1) {
+  transform: translateY(7px) rotate(45deg);
+}
+
+.nav-toggle[aria-expanded='true'] .toggle-bar:nth-child(2) {
+  opacity: 0;
+}
+
+.nav-toggle[aria-expanded='true'] .toggle-bar:nth-child(3) {
+  transform: translateY(-7px) rotate(-45deg);
+}
